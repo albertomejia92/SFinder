@@ -4,11 +4,30 @@
     <title>SFinder</title>
     <%= csrf_meta_tags %>
 
+     <script src="http://connect.soundcloud.com/sdk.js"></script>
+     
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="col-md-12">
+    <header>
+      <nav class="col-md-12 navbar navbar-default">
+      <h2 class="col-md-6"> Super Finder </h2>
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="col-md-3"><a href="#youtube" aria-controls="youtube" data-toggle="tab">Youtube</a></li>
+          <li role="presentation" class="col-md-3"><a href="#soundcloud" aria-controls="soundcloud" data-toggle="tab">SoundCloud</a></li>
+        </ul>
+      </nav>      
+    </header>
+    <section>
+      <%= yield %>
+    </section>
   </body>
 </html>
