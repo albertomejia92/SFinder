@@ -1,5 +1,5 @@
 SC.initialize({
-  client_id: '0e43f3b794fdcc9ee9b17298c096fe7a'
+  client_id: ''
 });
 
 function soundcloud () {
